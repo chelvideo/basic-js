@@ -1,4 +1,6 @@
-module.exports = function createDreamTeam(arr) {
+const CustomError = require("../extensions/custom-error");
+
+module.exports = function createDreamTeam(arr) { /* members */
   if (!Array.isArray(arr)) return false;
   let res = arr.map(item=>{
     if (typeof item!='string') return '';
@@ -6,4 +8,4 @@ module.exports = function createDreamTeam(arr) {
   })  
   res=res.sort().join('');
   return res;
-}  
+};

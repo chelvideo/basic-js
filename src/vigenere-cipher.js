@@ -1,3 +1,5 @@
+const CustomError = require("../extensions/custom-error");
+
 class VigenereCipheringMachine {
     constructor(direction) {
       this.direction = direction;
